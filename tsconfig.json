@@ -1,0 +1,15 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./apps/inspector-web" },
+    { "path": "./packages/protocol" },
+    { "path": "./packages/host" },
+    { "path": "./packages/sdk" },
+    { "path": "./packages/driver-kit" },
+    { "path": "./packages/recorder" },
+    { "path": "./packages/testing" },
+    { "path": "./packages/cli" },
+    { "path": "./premium/driver-nano" },
+    { "path": "./premium/driver-htop" }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@project-gateway/cli",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "project-gateway": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -b",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@project-gateway/driver-htop": "workspace:*",
+    "@project-gateway/driver-nano": "workspace:*",
+    "@project-gateway/host": "workspace:*",
+    "@project-gateway/protocol": "workspace:*",
+    "@project-gateway/sdk": "workspace:*",
+    "@project-gateway/testing": "workspace:*"
+  }
+}

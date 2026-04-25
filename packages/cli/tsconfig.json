@@ -1,0 +1,26 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "paths": {
+      "@project-gateway/driver-htop": ["../../premium/driver-htop/src/index.ts"],
+      "@project-gateway/driver-nano": ["../../premium/driver-nano/src/index.ts"],
+      "@project-gateway/host": ["../host/src/index.ts"],
+      "@project-gateway/protocol": ["../protocol/src/index.ts"],
+      "@project-gateway/sdk": ["../sdk/src/index.ts"],
+      "@project-gateway/testing": ["../testing/src/index.ts"]
+    },
+    "tsBuildInfoFile": "tsconfig.tsbuildinfo"
+  },
+  "include": ["src/**/*.ts"],
+  "references": [
+    { "path": "../../premium/driver-htop" },
+    { "path": "../../premium/driver-nano" },
+    { "path": "../host" },
+    { "path": "../protocol" },
+    { "path": "../sdk" },
+    { "path": "../testing" }
+  ]
+}

@@ -1,0 +1,84 @@
+import type { Cell, ScreenSnapshot } from '@project-gateway/protocol'
+
+interface CellSpan {
+  y: number
+  start: number
+  end: number
+  fg?: string | null
+  bg?: string | null
+  inverse?: boolean
+}
+
+export function createFixtureSnapshot(options: {
+  lines: string[]
+  spans?: CellSpan[]
+  rows?: number
+  cols?: number
+  cursor?: Partial<ScreenSnapshot['cursor']>
+}): ScreenSnapshot {
+  const rows = options.rows ?? options.lines.length
+  const cols = options.cols ?? 140
+  const paddedLines = [...options.lines]
+
+  while (paddedLines.length < rows) {
+    paddedLines.push('')
+  }
+
+  const spansByRow = new Map<number, CellSpan[]>()
+
+  for (const span of options.spans ?? []) {
+    const existing = spansByRow.get(span.y) ?? []
+    existing.push(span)
+    spansByRow.set(span.y, existing)
+  }
+
+  return {
+    revision: 1,
+    cols,
+    rows,
+    activeBuffer: 'primary',
+    title: null,
+    cursor: {
+      x: options.cursor?.x ?? 0,
+      y: options.cursor?.y ?? 0,
+      visible: options.cursor?.visible ?? true,
+      shape: options.cursor?.shape ?? 'block'
+    },
+    lines: paddedLines.slice(0, rows).map((line, y) =>
+      createCells(line, cols, spansByRow.get(y) ?? [])
+    ),
+    plainTextLines: paddedLines.slice(0, rows),
+    scrollbackLines: []
+  }
+}
+
+function createCells(
+  line: string,
+  cols: number,
+  spans: readonly CellSpan[]
+): Cell[] {
+  const values: Cell[] = []
+
+  for (let x = 0; x < cols; x += 1) {
+    const span = [...spans]
+      .reverse()
+      .find((candidate) => x >= candidate.start && x < candidate.end)
+
+    values.push({
+      ch: line[x] ?? ' ',
+      width: 1,
+      fg: span?.fg ?? null,
+      bg: span?.bg ?? null,
+      bold: false,
+      dim: false,
+      italic: false,
+      underline: false,
+      inverse: span?.inverse ?? false,
+      blink: false,
+      invisible: false,
+      strike: false
+    })
+  }
+
+  return values
+}

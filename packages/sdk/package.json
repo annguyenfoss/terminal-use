@@ -1,0 +1,26 @@
+{
+  "name": "@project-gateway/sdk",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -b",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@project-gateway/driver-kit": "workspace:*",
+    "@project-gateway/host": "workspace:*",
+    "@project-gateway/protocol": "workspace:*"
+  }
+}

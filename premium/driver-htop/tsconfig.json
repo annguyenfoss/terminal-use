@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "paths": {
+      "@project-gateway/driver-kit": ["../../packages/driver-kit/src/index.ts"],
+      "@project-gateway/host": ["../../packages/host/src/index.ts"],
+      "@project-gateway/protocol": ["../../packages/protocol/src/index.ts"],
+      "@project-gateway/sdk": ["../../packages/sdk/src/index.ts"]
+    },
+    "tsBuildInfoFile": "tsconfig.tsbuildinfo"
+  },
+  "include": ["src/**/*.ts"],
+  "references": [
+    { "path": "../../packages/protocol" },
+    { "path": "../../packages/driver-kit" },
+    { "path": "../../packages/host" },
+    { "path": "../../packages/sdk" }
+  ]
+}

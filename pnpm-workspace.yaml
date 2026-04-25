@@ -1,0 +1,7 @@
+packages:
+  - 'apps/*'
+  - 'packages/*'
+  - 'premium/*'
+onlyBuiltDependencies:
+  - node-pty
+  - esbuild

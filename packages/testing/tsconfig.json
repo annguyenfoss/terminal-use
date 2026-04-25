@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "paths": {
+      "@project-gateway/driver-kit": ["../driver-kit/src/index.ts"],
+      "@project-gateway/protocol": ["../protocol/src/index.ts"]
+    },
+    "tsBuildInfoFile": "tsconfig.tsbuildinfo"
+  },
+  "include": ["src/**/*.ts"],
+  "references": [{ "path": "../driver-kit" }, { "path": "../protocol" }]
+}

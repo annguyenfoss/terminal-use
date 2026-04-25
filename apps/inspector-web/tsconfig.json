@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "types": ["vite/client"],
+    "paths": {
+      "@project-gateway/protocol": ["../../packages/protocol/src/index.ts"]
+    },
+    "tsBuildInfoFile": "tsconfig.tsbuildinfo"
+  },
+  "include": ["src/**/*.ts"],
+  "references": [{ "path": "../../packages/protocol" }]
+}
