@@ -425,7 +425,7 @@ describe('parseNanoState', () => {
     const browserFile = 'phase4-browser-target-entry-with-a-very-long-name.txt'
     const snapshot = createFixtureSnapshot({
       lines: [
-        'DIR: /tmp/project-gateway-nano-fixture',
+        'DIR: /tmp/terminal-use-nano-fixture',
         browserFile,
         '..                         (parent dir)',
         '',
@@ -462,7 +462,7 @@ describe('parseNanoState', () => {
     const state = parseNanoState(snapshot)
 
     expect(state.mode).toBe('browser')
-    expect(state.browser?.cwd).toBe('/tmp/project-gateway-nano-fixture')
+    expect(state.browser?.cwd).toBe('/tmp/terminal-use-nano-fixture')
     expect(state.browser?.selectedText).toContain(browserFile)
     expect(state.browser?.selectedIndex).toBe(0)
   })

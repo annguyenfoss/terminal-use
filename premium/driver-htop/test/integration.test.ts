@@ -28,7 +28,7 @@ describe('htop integration', () => {
       return
     }
 
-    const tempRoot = await mkdtemp(join(tmpdir(), 'project-gateway-htop-'))
+    const tempRoot = await mkdtemp(join(tmpdir(), 'terminal-use-htop-'))
     const host = createHostServer({
       tempRoot,
       drivers: [createHtopDriver()],
@@ -37,7 +37,7 @@ describe('htop integration', () => {
       }
     })
     const client = await createInProcessClient(host, {
-      clientName: '@project-gateway/driver-htop:test'
+      clientName: '@terminal-use/driver-htop:test'
     })
 
     try {
@@ -109,7 +109,7 @@ describe('htop integration', () => {
     }
 
     const sleeper = spawn('sleep', ['30'])
-    const tempRoot = await mkdtemp(join(tmpdir(), 'project-gateway-htop-'))
+    const tempRoot = await mkdtemp(join(tmpdir(), 'terminal-use-htop-'))
     const host = createHostServer({
       tempRoot,
       drivers: [createHtopDriver()],
@@ -118,7 +118,7 @@ describe('htop integration', () => {
       }
     })
     const client = await createInProcessClient(host, {
-      clientName: '@project-gateway/driver-htop:test'
+      clientName: '@terminal-use/driver-htop:test'
     })
 
     try {

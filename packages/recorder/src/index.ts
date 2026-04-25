@@ -8,9 +8,9 @@ import type {
   RecordingFiles,
   SemanticEventPayload,
   ScreenSnapshot
-} from '@project-gateway/protocol'
+} from '@terminal-use/protocol'
 
-export const RECORDER_PACKAGE_NAME = '@project-gateway/recorder'
+export const RECORDER_PACKAGE_NAME = '@terminal-use/recorder'
 export const ASCIICAST_BUNDLE_FORMAT = 'asciicast-bundle' as const
 
 export interface AsciicastBundleMetadata {
@@ -245,5 +245,5 @@ async function resolveOutputDir(
   const baseRoot = tempRoot ? resolve(tempRoot) : tmpdir()
   await mkdir(baseRoot, { recursive: true })
 
-  return mkdtemp(join(baseRoot, `project-gateway-recording-${recordingId}-`))
+  return mkdtemp(join(baseRoot, `terminal-use-recording-${recordingId}-`))
 }

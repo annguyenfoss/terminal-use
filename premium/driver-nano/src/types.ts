@@ -1,6 +1,6 @@
-import type { ElementBox } from '@project-gateway/protocol'
-import type { ManagedLaunchProfileResolver } from '@project-gateway/host'
-import type { Session, WaitOptions } from '@project-gateway/sdk'
+import type { ElementBox } from '@terminal-use/protocol'
+import type { ManagedLaunchProfileResolver } from '@terminal-use/host'
+import type { Session, WaitOptions } from '@terminal-use/sdk'
 
 export const NANO_DRIVER_ID = 'nano'
 export const NANO_LAUNCH_PROFILE = 'nano'

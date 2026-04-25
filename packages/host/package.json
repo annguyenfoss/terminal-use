@@ -1,5 +1,5 @@
 {
-  "name": "@project-gateway/host",
+  "name": "@terminal-use/host",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -21,9 +21,9 @@
     "test": "vitest run --passWithNoTests"
   },
   "dependencies": {
-    "@project-gateway/driver-kit": "workspace:*",
-    "@project-gateway/protocol": "workspace:*",
-    "@project-gateway/recorder": "workspace:*",
+    "@terminal-use/driver-kit": "workspace:*",
+    "@terminal-use/protocol": "workspace:*",
+    "@terminal-use/recorder": "workspace:*",
     "@xterm/addon-unicode11": "^0.8.0",
     "@xterm/headless": "^5.5.0",
     "node-pty": "^1.0.0",

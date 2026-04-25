@@ -1,5 +1,5 @@
-import type { Driver } from '@project-gateway/driver-kit'
-import type { SemanticEventPayload } from '@project-gateway/protocol'
+import type { Driver } from '@terminal-use/driver-kit'
+import type { SemanticEventPayload } from '@terminal-use/protocol'
 
 export interface StoredDriverState {
   driver: Driver | null

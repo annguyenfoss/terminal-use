@@ -1,4 +1,4 @@
-import type { Cell, ScreenSnapshot } from '@project-gateway/protocol'
+import type { Cell, ScreenSnapshot } from '@terminal-use/protocol'
 
 interface CellSpan {
   y: number

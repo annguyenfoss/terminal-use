@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { PROTOCOL_VERSION } from '@project-gateway/protocol'
+import { PROTOCOL_VERSION } from '@terminal-use/protocol'
 
 import { createHostServer } from '../src/index.js'
 import { attachInbox, expectStarted, waitForScreenText } from './helpers.js'

@@ -25,7 +25,7 @@ describe('nano integration', () => {
       return
     }
 
-    const tempRoot = await mkdtemp(join(tmpdir(), 'project-gateway-nano-'))
+    const tempRoot = await mkdtemp(join(tmpdir(), 'terminal-use-nano-'))
     const file = join(tempRoot, 'phase4-save-target.txt')
     const host = createHostServer({
       tempRoot,
@@ -35,7 +35,7 @@ describe('nano integration', () => {
       }
     })
     const client = await createInProcessClient(host, {
-      clientName: '@project-gateway/driver-nano:test'
+      clientName: '@terminal-use/driver-nano:test'
     })
 
     try {
@@ -74,7 +74,7 @@ describe('nano integration', () => {
       return
     }
 
-    const tempRoot = await mkdtemp(join(tmpdir(), 'project-gateway-nano-'))
+    const tempRoot = await mkdtemp(join(tmpdir(), 'terminal-use-nano-'))
     const file = join(tempRoot, 'phase4-save-as.txt')
     const host = createHostServer({
       tempRoot,
@@ -84,7 +84,7 @@ describe('nano integration', () => {
       }
     })
     const client = await createInProcessClient(host, {
-      clientName: '@project-gateway/driver-nano:test'
+      clientName: '@terminal-use/driver-nano:test'
     })
 
     try {
@@ -110,7 +110,7 @@ describe('nano integration', () => {
       return
     }
 
-    const tempRoot = await mkdtemp(join(tmpdir(), 'project-gateway-nano-'))
+    const tempRoot = await mkdtemp(join(tmpdir(), 'terminal-use-nano-'))
     const file = join(
       tempRoot,
       'phase4-browser-target.txt'
@@ -125,7 +125,7 @@ describe('nano integration', () => {
       }
     })
     const client = await createInProcessClient(host, {
-      clientName: '@project-gateway/driver-nano:test'
+      clientName: '@terminal-use/driver-nano:test'
     })
 
     try {
@@ -154,7 +154,7 @@ describe('nano integration', () => {
       return
     }
 
-    const tempRoot = await mkdtemp(join(tmpdir(), 'project-gateway-nano-'))
+    const tempRoot = await mkdtemp(join(tmpdir(), 'terminal-use-nano-'))
     const file = join(tempRoot, 'phase5-replace-target.txt')
     const host = createHostServer({
       tempRoot,
@@ -164,7 +164,7 @@ describe('nano integration', () => {
       }
     })
     const client = await createInProcessClient(host, {
-      clientName: '@project-gateway/driver-nano:test'
+      clientName: '@terminal-use/driver-nano:test'
     })
 
     try {
@@ -213,7 +213,7 @@ describe('nano integration', () => {
       return
     }
 
-    const tempRoot = await mkdtemp(join(tmpdir(), 'project-gateway-nano-'))
+    const tempRoot = await mkdtemp(join(tmpdir(), 'terminal-use-nano-'))
     const file = join(tempRoot, 'phase5-helper-target.txt')
     const host = createHostServer({
       tempRoot,
@@ -223,7 +223,7 @@ describe('nano integration', () => {
       }
     })
     const client = await createInProcessClient(host, {
-      clientName: '@project-gateway/driver-nano:test'
+      clientName: '@terminal-use/driver-nano:test'
     })
 
     try {
@@ -275,7 +275,7 @@ describe('nano integration', () => {
       return
     }
 
-    const tempRoot = await mkdtemp(join(tmpdir(), 'project-gateway-nano-'))
+    const tempRoot = await mkdtemp(join(tmpdir(), 'terminal-use-nano-'))
     const firstFile = join(tempRoot, 'phase5-buffer-one.txt')
     const secondFile = join(tempRoot, 'phase5-buffer-two.txt')
     const host = createHostServer({
@@ -288,7 +288,7 @@ describe('nano integration', () => {
       }
     })
     const client = await createInProcessClient(host, {
-      clientName: '@project-gateway/driver-nano:test'
+      clientName: '@terminal-use/driver-nano:test'
     })
 
     try {
@@ -381,7 +381,7 @@ describe('nano integration', () => {
       return
     }
 
-    const tempRoot = await mkdtemp(join(tmpdir(), 'project-gateway-nano-'))
+    const tempRoot = await mkdtemp(join(tmpdir(), 'terminal-use-nano-'))
     const file = join(tempRoot, 'phase5-exit-target.txt')
     const host = createHostServer({
       tempRoot,
@@ -391,7 +391,7 @@ describe('nano integration', () => {
       }
     })
     const client = await createInProcessClient(host, {
-      clientName: '@project-gateway/driver-nano:test'
+      clientName: '@terminal-use/driver-nano:test'
     })
 
     try {

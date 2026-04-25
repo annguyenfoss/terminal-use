@@ -5,8 +5,8 @@
     "rootDir": "./src",
     "outDir": "./dist",
     "paths": {
-      "@project-gateway/driver-kit": ["../driver-kit/src/index.ts"],
-      "@project-gateway/protocol": ["../protocol/src/index.ts"]
+      "@terminal-use/driver-kit": ["../driver-kit/src/index.ts"],
+      "@terminal-use/protocol": ["../protocol/src/index.ts"]
     },
     "tsBuildInfoFile": "tsconfig.tsbuildinfo"
   },

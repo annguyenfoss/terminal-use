@@ -2,7 +2,7 @@ import { existsSync, accessSync, constants as fsConstants } from 'node:fs'
 import { delimiter, join } from 'node:path'
 import { spawnSync } from 'node:child_process'
 
-import type { ActionResult, Driver, DriverIO } from '@project-gateway/driver-kit'
+import type { ActionResult, Driver, DriverIO } from '@terminal-use/driver-kit'
 
 import {
   HTOP_DRIVER_ID,

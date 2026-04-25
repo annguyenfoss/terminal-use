@@ -1,4 +1,4 @@
-import type { Element } from '@project-gateway/protocol'
+import type { Element } from '@terminal-use/protocol'
 
 import { ProtocolError, UsageError } from './errors.js'
 import { waitForCondition, type WaitOptions } from './wait.js'

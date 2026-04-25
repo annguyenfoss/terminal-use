@@ -6,7 +6,7 @@ Date: 2026-04-25
 
 The master plan is:
 
-- [PLAN_FINAL.md](/home/stk/workspace/engineering/adjutant/project_gateway/DIRECTIVE/PLAN/PLAN_FINAL.md)
+- [PLAN_FINAL.md](/home/stk/workspace/engineering/adjutant/terminal-use/DIRECTIVE/PLAN/PLAN_FINAL.md)
 
 This file is the execution companion to the master plan.
 
@@ -43,18 +43,18 @@ Execution note for the prototype track:
 
 ## Done
 
-- Created [PLAN_KODAK.md](/home/stk/workspace/engineering/adjutant/project_gateway/DIRECTIVE/PLAN/ARCHIVE/PLAN_KODAK.md)
-- Reviewed [PLAN_COLGATE.md](/home/stk/workspace/engineering/adjutant/project_gateway/DIRECTIVE/PLAN/ARCHIVE/PLAN_COLGATE.md) against current sources
-- Created merged master plan [PLAN_FINAL.md](/home/stk/workspace/engineering/adjutant/project_gateway/DIRECTIVE/PLAN/PLAN_FINAL.md)
+- Created [PLAN_KODAK.md](/home/stk/workspace/engineering/adjutant/terminal-use/DIRECTIVE/PLAN/ARCHIVE/PLAN_KODAK.md)
+- Reviewed [PLAN_COLGATE.md](/home/stk/workspace/engineering/adjutant/terminal-use/DIRECTIVE/PLAN/ARCHIVE/PLAN_COLGATE.md) against current sources
+- Created merged master plan [PLAN_FINAL.md](/home/stk/workspace/engineering/adjutant/terminal-use/DIRECTIVE/PLAN/PLAN_FINAL.md)
 - Created execution structure docs
 - Bootstrapped a pnpm workspace with root build, typecheck, lint, and test commands
 - Created package shells for `protocol`, `host`, `sdk`, `driver-kit`, `recorder`, `testing`, `cli`, `driver-nano`, and `driver-htop`
-- Implemented the initial `@project-gateway/protocol` package with v1 envelope and Phase 1 message schemas
-- Implemented the Phase 1 host core in `@project-gateway/host`
+- Implemented the initial `@terminal-use/protocol` package with v1 envelope and Phase 1 message schemas
+- Implemented the Phase 1 host core in `@terminal-use/host`
 - Added managed PTY sessions, xterm-backed canonical screen state, snapshots, row patches, in-process transport, and standalone WebSocket transport
 - Added lean launcher/config stubs for `nano` and `htop`
 - Added host unit, integration, and transport tests
-- Implemented the Phase 2 SDK skeleton in `@project-gateway/sdk`
+- Implemented the Phase 2 SDK skeleton in `@terminal-use/sdk`
 - Added `Session`, `Screen`, `Keyboard`, text locators, waits, and a minimal raw escape hatch
 - Added in-process and WebSocket SDK transports with one client contract
 - Added SDK unit and integration tests, including reattach and remote transport coverage
@@ -69,23 +69,23 @@ Execution note for the prototype track:
 - Added thin Phase 3 CLI wrappers for `host-demo` and `record-demo`
 - Added Phase 3 integration tests for host semantic state, recording bundles, and SDK driver actions
 - Implemented resolver-backed managed launch profiles and generic `profileArgs` support in the protocol, host, and SDK
-- Implemented the first real `@project-gateway/driver-nano` package with a version-guarded managed launch profile for GNU `nano` 9.0
+- Implemented the first real `@terminal-use/driver-nano` package with a version-guarded managed launch profile for GNU `nano` 9.0
 - Added `nano` parser slices for editor, search, write-out, read-file, help, browser, and yes/no flows
 - Added a thin typed `attachNano(session)` facade for `insert`, `save`, `saveAs`, `search`, `openHelp`, `closeHelp`, and `openFile`
 - Added `nano` parser fixtures, launch tests, and live integration tests for managed launch, save/saveAs, search/help, and browser-backed file open
 - Extended the inspector to start `deterministic-demo` or `nano` sessions and invoke free-form driver actions
-- Added `project-gateway host-nano` and `project-gateway record-nano`
+- Added `terminal-use host-nano` and `terminal-use record-nano`
 - Hardened the host against late PTY output after session teardown by making session broadcast tolerant of removed sessions
 - Added a deterministic managed `nanorc` with helper scripts and fallback bindings for `nano` 9.0
 - Expanded the `nano` parser and typed facade for replace, marked editing, execute/helper flows, multibuffer, macros, anchors, and exit handling
 - Added broader `nano` parser fixtures and live integration coverage for replace, helper flows, multibuffer, marked edits, macros, anchors, and exit behavior
 - Expanded inspector quick actions so the widened `nano` surface is debuggable live
 - Verified local `pnpm build`, `pnpm typecheck`, `pnpm lint`, and full `pnpm test`, including WebSocket transport coverage
-- Implemented the first real `@project-gateway/driver-htop` package with a managed `htop` launch profile, deterministic `HTOPRC`, and a GNU/Linux-first `htop 3.5.x` version guard
+- Implemented the first real `@terminal-use/driver-htop` package with a managed `htop` launch profile, deterministic `HTOPRC`, and a GNU/Linux-first `htop 3.5.x` version guard
 - Added `htop` parser coverage for the managed main view, tabs, meters, search/filter prompts, function bar, and signal menu
 - Added a thin typed `attachHtop(session)` facade for navigation, tree toggle, search/filter, sort presets, kill signal flow, refresh, and quit
 - Added `htop` parser fixtures, launch tests, and live integration tests for managed launch, navigation, search/filter, sort, tree toggle, and signal-menu kill
-- Added `project-gateway host-htop` and `project-gateway record-htop`
+- Added `terminal-use host-htop` and `terminal-use record-htop`
 - Extended the inspector to launch `htop` with optional PID filtering and readonly-by-default controls
 - Verified the isolated Phase 6 `htop` package path locally with parser, launch, and live integration coverage
 

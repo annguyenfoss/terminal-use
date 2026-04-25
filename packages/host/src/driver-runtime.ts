@@ -2,8 +2,8 @@ import type {
   ActionResult,
   Driver,
   DriverIO
-} from '@project-gateway/driver-kit'
-import type { Element, ScreenSnapshot, SemanticEventPayload } from '@project-gateway/protocol'
+} from '@terminal-use/driver-kit'
+import type { Element, ScreenSnapshot, SemanticEventPayload } from '@terminal-use/protocol'
 
 import type { DriverStateStore } from './driver-state-store.js'
 

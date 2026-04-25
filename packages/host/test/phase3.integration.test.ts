@@ -5,7 +5,7 @@ import { setTimeout as delay } from 'node:timers/promises'
 
 import { describe, expect, it } from 'vitest'
 
-import { PROTOCOL_VERSION } from '@project-gateway/protocol'
+import { PROTOCOL_VERSION } from '@terminal-use/protocol'
 
 import {
   DETERMINISTIC_DEMO_DRIVER_ID,
@@ -16,7 +16,7 @@ import { attachInbox } from './helpers.js'
 
 describe('Phase 3 host integration', () => {
   it('supports semantic state, driver actions, and recording bundles', async () => {
-    const tempRoot = await mkdtemp(join(tmpdir(), 'project-gateway-phase3-'))
+    const tempRoot = await mkdtemp(join(tmpdir(), 'terminal-use-phase3-'))
     const outputDir = join(tempRoot, 'recording-bundle')
     const host = createHostServer({
       ...createDeterministicDemoHostConfig(),

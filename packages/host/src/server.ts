@@ -1,7 +1,7 @@
 import { randomUUID } from 'node:crypto'
 
-import type { Driver } from '@project-gateway/driver-kit'
-import type { HostToClientMessage, ScreenSnapshot } from '@project-gateway/protocol'
+import type { Driver } from '@terminal-use/driver-kit'
+import type { HostToClientMessage, ScreenSnapshot } from '@terminal-use/protocol'
 
 import {
   createErrorEnvelope,

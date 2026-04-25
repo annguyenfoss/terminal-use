@@ -1,8 +1,8 @@
 import type { AddressInfo } from 'node:net'
 import { randomUUID } from 'node:crypto'
 
-import type { HostToClientMessage } from '@project-gateway/protocol'
-import { PROTOCOL_VERSION } from '@project-gateway/protocol'
+import type { HostToClientMessage } from '@terminal-use/protocol'
+import { PROTOCOL_VERSION } from '@terminal-use/protocol'
 import { WebSocketServer } from 'ws'
 import type WebSocket from 'ws'
 

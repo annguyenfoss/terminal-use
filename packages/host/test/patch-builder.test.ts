@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import type { ScreenSnapshot } from '@project-gateway/protocol'
+import type { ScreenSnapshot } from '@terminal-use/protocol'
 
 import { buildScreenPatch } from '../src/patch-builder.js'
 

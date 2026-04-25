@@ -1,4 +1,4 @@
-import type { Cell, Cursor, ScreenPatch, ScreenSnapshot } from '@project-gateway/protocol'
+import type { Cell, Cursor, ScreenPatch, ScreenSnapshot } from '@terminal-use/protocol'
 
 export interface ScreenPatchDiff {
   changed: boolean

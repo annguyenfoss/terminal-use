@@ -5,12 +5,12 @@ import type {
   RawEventPayload,
   ScreenSnapshot,
   SemanticEventPayload
-} from '@project-gateway/protocol'
-import { PROTOCOL_VERSION } from '@project-gateway/protocol'
+} from '@terminal-use/protocol'
+import { PROTOCOL_VERSION } from '@terminal-use/protocol'
 import {
   AsciicastBundleRecorder,
   type AsciicastBundleRecorderOptions
-} from '@project-gateway/recorder'
+} from '@terminal-use/recorder'
 
 import type { SessionRecord } from './session-registry.js'
 

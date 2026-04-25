@@ -1,4 +1,4 @@
-export { PROTOCOL_VERSION } from '@project-gateway/protocol'
+export { PROTOCOL_VERSION } from '@terminal-use/protocol'
 export { HostServer, createHostServer } from './server.js'
 export type {
   HostServerOptions,
@@ -14,4 +14,4 @@ export { InProcessConnection } from './transports/in-process.js'
 export { HostWebSocketServer } from './transports/ws-server.js'
 export type { ManagedLauncherConfig } from './launchers/nano.js'
 
-export const HOST_PACKAGE_NAME = '@project-gateway/host'
+export const HOST_PACKAGE_NAME = '@terminal-use/host'

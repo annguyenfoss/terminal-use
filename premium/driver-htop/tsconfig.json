@@ -5,10 +5,10 @@
     "rootDir": "./src",
     "outDir": "./dist",
     "paths": {
-      "@project-gateway/driver-kit": ["../../packages/driver-kit/src/index.ts"],
-      "@project-gateway/host": ["../../packages/host/src/index.ts"],
-      "@project-gateway/protocol": ["../../packages/protocol/src/index.ts"],
-      "@project-gateway/sdk": ["../../packages/sdk/src/index.ts"]
+      "@terminal-use/driver-kit": ["../../packages/driver-kit/src/index.ts"],
+      "@terminal-use/host": ["../../packages/host/src/index.ts"],
+      "@terminal-use/protocol": ["../../packages/protocol/src/index.ts"],
+      "@terminal-use/sdk": ["../../packages/sdk/src/index.ts"]
     },
     "tsBuildInfoFile": "tsconfig.tsbuildinfo"
   },

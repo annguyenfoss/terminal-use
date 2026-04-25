@@ -5,9 +5,9 @@ import type {
   HostToClientMessage,
   ScreenSnapshot,
   SessionStarted
-} from '@project-gateway/protocol'
+} from '@terminal-use/protocol'
 
-import { PROTOCOL_VERSION } from '@project-gateway/protocol'
+import { PROTOCOL_VERSION } from '@terminal-use/protocol'
 import type { InProcessConnection } from '../src/index.js'
 
 export class MessageInbox {

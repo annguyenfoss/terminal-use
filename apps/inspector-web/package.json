@@ -1,5 +1,5 @@
 {
-  "name": "@project-gateway/inspector-web",
+  "name": "@terminal-use/inspector-web",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -10,7 +10,7 @@
     "test": "vitest run --passWithNoTests"
   },
   "dependencies": {
-    "@project-gateway/protocol": "workspace:*",
+    "@terminal-use/protocol": "workspace:*",
     "@xterm/addon-fit": "^0.10.0",
     "@xterm/xterm": "^5.5.0",
     "vite": "^7.3.2"

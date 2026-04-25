@@ -1,5 +1,5 @@
 {
-  "name": "@project-gateway/driver-nano",
+  "name": "@terminal-use/driver-nano",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -19,9 +19,9 @@
     "test": "vitest run --passWithNoTests"
   },
   "dependencies": {
-    "@project-gateway/driver-kit": "workspace:*",
-    "@project-gateway/host": "workspace:*",
-    "@project-gateway/protocol": "workspace:*",
-    "@project-gateway/sdk": "workspace:*"
+    "@terminal-use/driver-kit": "workspace:*",
+    "@terminal-use/host": "workspace:*",
+    "@terminal-use/protocol": "workspace:*",
+    "@terminal-use/sdk": "workspace:*"
   }
 }

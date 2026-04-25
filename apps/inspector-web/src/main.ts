@@ -3,11 +3,11 @@ import { Terminal } from '@xterm/xterm'
 import type {
   ClientToHostMessage,
   HostToClientMessage
-} from '@project-gateway/protocol'
+} from '@terminal-use/protocol'
 import {
   PROTOCOL_VERSION,
   hostToClientMessageSchema
-} from '@project-gateway/protocol'
+} from '@terminal-use/protocol'
 import '@xterm/xterm/css/xterm.css'
 
 import './styles.css'
@@ -294,7 +294,7 @@ async function connect(): Promise<void> {
   await request('hello.ok', {
     type: 'hello',
     payload: {
-      clientName: '@project-gateway/inspector-web'
+      clientName: '@terminal-use/inspector-web'
     }
   })
 

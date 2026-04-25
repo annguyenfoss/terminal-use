@@ -28,6 +28,6 @@ export {
 export type { WaitOptions } from './wait.js'
 export { DEFAULT_TIMEOUT_MS } from './wait.js'
 
-export { PROTOCOL_VERSION } from '@project-gateway/protocol'
+export { PROTOCOL_VERSION } from '@terminal-use/protocol'
 
-export const SDK_PACKAGE_NAME = '@project-gateway/sdk'
+export const SDK_PACKAGE_NAME = '@terminal-use/sdk'

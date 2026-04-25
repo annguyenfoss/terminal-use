@@ -2,8 +2,8 @@ import {
   createBox,
   createElement,
   type TextQuery
-} from '@project-gateway/driver-kit'
-import type { Cell, Element, ScreenSnapshot } from '@project-gateway/protocol'
+} from '@terminal-use/driver-kit'
+import type { Cell, Element, ScreenSnapshot } from '@terminal-use/protocol'
 
 import {
   HTOP_SUPPORTED_VERSION,

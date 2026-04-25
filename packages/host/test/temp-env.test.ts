@@ -26,7 +26,7 @@ describe('temp-env', () => {
 
   it('creates and cleans up an isolated HOME', async () => {
     const managed = await createManagedTempEnv({
-      tempRoot: join(tmpdir(), 'project-gateway-tests')
+      tempRoot: join(tmpdir(), 'terminal-use-tests')
     })
 
     await access(managed.homeDir)

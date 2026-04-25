@@ -5,12 +5,12 @@
     "rootDir": "./src",
     "outDir": "./dist",
     "paths": {
-      "@project-gateway/driver-htop": ["../../premium/driver-htop/src/index.ts"],
-      "@project-gateway/driver-nano": ["../../premium/driver-nano/src/index.ts"],
-      "@project-gateway/host": ["../host/src/index.ts"],
-      "@project-gateway/protocol": ["../protocol/src/index.ts"],
-      "@project-gateway/sdk": ["../sdk/src/index.ts"],
-      "@project-gateway/testing": ["../testing/src/index.ts"]
+      "@terminal-use/driver-htop": ["../../premium/driver-htop/src/index.ts"],
+      "@terminal-use/driver-nano": ["../../premium/driver-nano/src/index.ts"],
+      "@terminal-use/host": ["../host/src/index.ts"],
+      "@terminal-use/protocol": ["../protocol/src/index.ts"],
+      "@terminal-use/sdk": ["../sdk/src/index.ts"],
+      "@terminal-use/testing": ["../testing/src/index.ts"]
     },
     "tsBuildInfoFile": "tsconfig.tsbuildinfo"
   },

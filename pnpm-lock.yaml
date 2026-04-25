@@ -38,7 +38,7 @@ importers:
 
   apps/inspector-web:
     dependencies:
-      '@project-gateway/protocol':
+      '@terminal-use/protocol':
         specifier: workspace:*
         version: link:../../packages/protocol
       '@xterm/addon-fit':
@@ -53,40 +53,40 @@ importers:
 
   packages/cli:
     dependencies:
-      '@project-gateway/driver-htop':
+      '@terminal-use/driver-htop':
         specifier: workspace:*
         version: link:../../premium/driver-htop
-      '@project-gateway/driver-nano':
+      '@terminal-use/driver-nano':
         specifier: workspace:*
         version: link:../../premium/driver-nano
-      '@project-gateway/host':
+      '@terminal-use/host':
         specifier: workspace:*
         version: link:../host
-      '@project-gateway/protocol':
+      '@terminal-use/protocol':
         specifier: workspace:*
         version: link:../protocol
-      '@project-gateway/sdk':
+      '@terminal-use/sdk':
         specifier: workspace:*
         version: link:../sdk
-      '@project-gateway/testing':
+      '@terminal-use/testing':
         specifier: workspace:*
         version: link:../testing
 
   packages/driver-kit:
     dependencies:
-      '@project-gateway/protocol':
+      '@terminal-use/protocol':
         specifier: workspace:*
         version: link:../protocol
 
   packages/host:
     dependencies:
-      '@project-gateway/driver-kit':
+      '@terminal-use/driver-kit':
         specifier: workspace:*
         version: link:../driver-kit
-      '@project-gateway/protocol':
+      '@terminal-use/protocol':
         specifier: workspace:*
         version: link:../protocol
-      '@project-gateway/recorder':
+      '@terminal-use/recorder':
         specifier: workspace:*
         version: link:../recorder
       '@xterm/addon-unicode11':
@@ -110,58 +110,58 @@ importers:
 
   packages/recorder:
     dependencies:
-      '@project-gateway/protocol':
+      '@terminal-use/protocol':
         specifier: workspace:*
         version: link:../protocol
 
   packages/sdk:
     dependencies:
-      '@project-gateway/driver-kit':
+      '@terminal-use/driver-kit':
         specifier: workspace:*
         version: link:../driver-kit
-      '@project-gateway/host':
+      '@terminal-use/host':
         specifier: workspace:*
         version: link:../host
-      '@project-gateway/protocol':
+      '@terminal-use/protocol':
         specifier: workspace:*
         version: link:../protocol
 
   packages/testing:
     dependencies:
-      '@project-gateway/driver-kit':
+      '@terminal-use/driver-kit':
         specifier: workspace:*
         version: link:../driver-kit
-      '@project-gateway/protocol':
+      '@terminal-use/protocol':
         specifier: workspace:*
         version: link:../protocol
 
   premium/driver-htop:
     dependencies:
-      '@project-gateway/driver-kit':
+      '@terminal-use/driver-kit':
         specifier: workspace:*
         version: link:../../packages/driver-kit
-      '@project-gateway/host':
+      '@terminal-use/host':
         specifier: workspace:*
         version: link:../../packages/host
-      '@project-gateway/protocol':
+      '@terminal-use/protocol':
         specifier: workspace:*
         version: link:../../packages/protocol
-      '@project-gateway/sdk':
+      '@terminal-use/sdk':
         specifier: workspace:*
         version: link:../../packages/sdk
 
   premium/driver-nano:
     dependencies:
-      '@project-gateway/driver-kit':
+      '@terminal-use/driver-kit':
         specifier: workspace:*
         version: link:../../packages/driver-kit
-      '@project-gateway/host':
+      '@terminal-use/host':
         specifier: workspace:*
         version: link:../../packages/host
-      '@project-gateway/protocol':
+      '@terminal-use/protocol':
         specifier: workspace:*
         version: link:../../packages/protocol
-      '@project-gateway/sdk':
+      '@terminal-use/sdk':
         specifier: workspace:*
         version: link:../../packages/sdk
 

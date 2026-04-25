@@ -1,5 +1,5 @@
 {
-  "name": "@project-gateway/sdk",
+  "name": "@terminal-use/sdk",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -19,8 +19,8 @@
     "test": "vitest run --passWithNoTests"
   },
   "dependencies": {
-    "@project-gateway/driver-kit": "workspace:*",
-    "@project-gateway/host": "workspace:*",
-    "@project-gateway/protocol": "workspace:*"
+    "@terminal-use/driver-kit": "workspace:*",
+    "@terminal-use/host": "workspace:*",
+    "@terminal-use/protocol": "workspace:*"
   }
 }

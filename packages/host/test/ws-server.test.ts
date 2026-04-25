@@ -3,8 +3,8 @@ import { once } from 'node:events'
 import { describe, expect, it } from 'vitest'
 import WebSocket from 'ws'
 
-import type { HostToClientMessage } from '@project-gateway/protocol'
-import { PROTOCOL_VERSION } from '@project-gateway/protocol'
+import type { HostToClientMessage } from '@terminal-use/protocol'
+import { PROTOCOL_VERSION } from '@terminal-use/protocol'
 
 import { createHostServer } from '../src/index.js'
 

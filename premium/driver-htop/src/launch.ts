@@ -5,7 +5,7 @@ import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { promisify } from 'node:util'
 
-import type { ManagedLaunchProfile } from '@project-gateway/host'
+import type { ManagedLaunchProfile } from '@terminal-use/host'
 
 import {
   HTOP_DRIVER_ID,
@@ -106,7 +106,7 @@ function parseProfileArgs(value: unknown): HtopProfileArgs {
 }
 
 async function createManagedHtoprc(): Promise<string> {
-  const root = await mkdtemp(join(tmpdir(), 'project-gateway-htop-'))
+  const root = await mkdtemp(join(tmpdir(), 'terminal-use-htop-'))
   const rcfile = join(root, 'htoprc')
   const templatePath = fileURLToPath(new URL('../runtime/managed-htoprc', import.meta.url))
   const template = await readFile(templatePath, 'utf8')

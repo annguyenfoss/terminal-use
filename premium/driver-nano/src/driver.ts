@@ -1,7 +1,7 @@
 import { basename, dirname, isAbsolute, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-import type { ActionResult, Driver, DriverIO } from '@project-gateway/driver-kit'
+import type { ActionResult, Driver, DriverIO } from '@terminal-use/driver-kit'
 
 import {
   NANO_DRIVER_ID,

@@ -1,6 +1,6 @@
 import { createRequire } from 'node:module'
 
-import type { ScreenPatch, ScreenSnapshot } from '@project-gateway/protocol'
+import type { ScreenPatch, ScreenSnapshot } from '@terminal-use/protocol'
 import type { Unicode11Addon as XtermUnicode11Addon } from '@xterm/addon-unicode11'
 import type {
   IModes,

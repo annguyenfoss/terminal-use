@@ -1,4 +1,4 @@
-import type { ScreenSnapshot } from '@project-gateway/protocol'
+import type { ScreenSnapshot } from '@terminal-use/protocol'
 
 import { UsageError } from './errors.js'
 import type { WaitOptions } from './wait.js'

@@ -3,7 +3,7 @@ import {
   type DriverClient,
   type Session,
   type WaitOptions
-} from '@project-gateway/sdk'
+} from '@terminal-use/sdk'
 
 import {
   HTOP_DRIVER_ID,

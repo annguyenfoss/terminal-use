@@ -2,7 +2,7 @@ import { randomUUID } from 'node:crypto'
 import { basename } from 'node:path'
 import { setTimeout as delay } from 'node:timers/promises'
 
-import type { Driver, DriverIO } from '@project-gateway/driver-kit'
+import type { Driver, DriverIO } from '@terminal-use/driver-kit'
 import type {
   ActionInvoke,
   ActionResult,
@@ -22,8 +22,8 @@ import type {
   SessionExited,
   SessionResize,
   SessionStarted
-} from '@project-gateway/protocol'
-import { PROTOCOL_VERSION, clientToHostMessageSchema } from '@project-gateway/protocol'
+} from '@terminal-use/protocol'
+import { PROTOCOL_VERSION, clientToHostMessageSchema } from '@terminal-use/protocol'
 
 import { DriverRuntime } from './driver-runtime.js'
 import { DriverStateStore } from './driver-state-store.js'

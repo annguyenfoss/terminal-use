@@ -33,7 +33,7 @@ Out of scope:
 
 Implement:
 
-- the first real `@project-gateway/driver-htop` parser and action surface
+- the first real `@terminal-use/driver-htop` parser and action surface
 - a managed `htop` profile with deterministic config for the supported alpha path
 - fixtures for stable parser coverage
 - integration tests for the supported `htop` alpha flows
@@ -51,7 +51,7 @@ Phase 6 is complete when all of the following are true:
 
 Phase 6 implementation delivered:
 
-- `@project-gateway/driver-htop` with a deterministic managed launch profile and checked-in managed `HTOPRC`
+- `@terminal-use/driver-htop` with a deterministic managed launch profile and checked-in managed `HTOPRC`
 - parser coverage for tabs, meters, main rows, search/filter prompts, function bar, and signal menu
 - typed `attachHtop(session)` facade methods for navigation, tree toggle, search/filter, sort presets, kill, refresh, and quit
 - CLI and inspector launch/debug support with readonly-by-default `htop` flows

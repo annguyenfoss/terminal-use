@@ -1,4 +1,4 @@
-import type { ScreenPatch, ScreenSnapshot } from '@project-gateway/protocol'
+import type { ScreenPatch, ScreenSnapshot } from '@terminal-use/protocol'
 
 import type { Locator, TextQuery } from './locator.js'
 import { SdkLocator } from './locator.js'

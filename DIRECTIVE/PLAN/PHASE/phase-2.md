@@ -6,7 +6,7 @@ Status: complete on 2026-04-24
 
 Delivered:
 
-- shell-first SDK client in `@project-gateway/sdk`
+- shell-first SDK client in `@terminal-use/sdk`
 - one public `Session` surface with `Screen`, `Keyboard`, text locators, waits, and a mouse stub
 - in-process and WebSocket transports behind one client contract
 - live viewport cache backed by `screen.snapshot` and `screen.patch`
@@ -65,7 +65,7 @@ Implement the first useful SDK surface in `packages/sdk`, including:
 
 Transport work should cover:
 
-- in-process client usage against `@project-gateway/host`
+- in-process client usage against `@terminal-use/host`
 - WebSocket client usage against the same protocol
 
 If `Mouse` is added in this phase, keep it skeletal unless generic shell tests actually need it.

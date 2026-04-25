@@ -1,4 +1,4 @@
-import type { ErrorMessage } from '@project-gateway/protocol'
+import type { ErrorMessage } from '@terminal-use/protocol'
 
 export class GatewayError extends Error {
   constructor(message: string) {

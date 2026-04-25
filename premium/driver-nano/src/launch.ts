@@ -5,7 +5,7 @@ import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { promisify } from 'node:util'
 
-import type { ManagedLaunchProfile } from '@project-gateway/host'
+import type { ManagedLaunchProfile } from '@terminal-use/host'
 
 import {
   NANO_DRIVER_ID,
@@ -86,7 +86,7 @@ function parseProfileArgs(value: unknown): NanoProfileArgs {
 }
 
 async function createManagedRcfile(): Promise<string> {
-  const root = await mkdtemp(join(tmpdir(), 'project-gateway-nano-'))
+  const root = await mkdtemp(join(tmpdir(), 'terminal-use-nano-'))
   const rcfile = join(root, 'nanorc')
   const formatter = fileURLToPath(new URL('../runtime/formatter.mjs', import.meta.url))
   const linter = fileURLToPath(new URL('../runtime/linter.mjs', import.meta.url))

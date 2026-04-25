@@ -1,4 +1,4 @@
-import type { ScreenSnapshot } from '@project-gateway/protocol'
+import type { ScreenSnapshot } from '@terminal-use/protocol'
 import type * as xtermHeadless from '@xterm/headless'
 
 type Cell = ScreenSnapshot['lines'][number][number]

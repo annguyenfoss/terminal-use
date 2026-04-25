@@ -32,7 +32,7 @@ Out of scope:
 
 Implement:
 
-- broader `@project-gateway/driver-htop` screen-family parsing and actions
+- broader `@terminal-use/driver-htop` screen-family parsing and actions
 - explicit capability downgrades for unsupported helper tools and restricted environments
 - expanded fixtures and live integration coverage for the Phase 7 `htop` matrix
 - recorder and inspector support that remains sufficient to debug the widened `htop` surface

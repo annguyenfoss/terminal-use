@@ -1,5 +1,5 @@
 {
-  "name": "@project-gateway/protocol",
+  "name": "@terminal-use/protocol",
   "version": "0.0.0",
   "private": true,
   "type": "module",

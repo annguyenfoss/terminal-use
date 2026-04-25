@@ -19,7 +19,7 @@ export async function createManagedTempEnv(
 ): Promise<ManagedTempEnv> {
   const root = options.tempRoot ?? tmpdir()
   await mkdir(root, { recursive: true })
-  const homeDir = await mkdtemp(join(root, 'project-gateway-home-'))
+  const homeDir = await mkdtemp(join(root, 'terminal-use-home-'))
   const env = buildManagedEnv(homeDir, options)
 
   return {

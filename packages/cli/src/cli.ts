@@ -12,20 +12,20 @@ import {
   attachHtop,
   createHtopDriver,
   createHtopLaunchProfile
-} from '@project-gateway/driver-htop'
+} from '@terminal-use/driver-htop'
 import {
   NANO_LAUNCH_PROFILE,
   attachNano,
   createNanoDriver,
   createNanoLaunchProfile
-} from '@project-gateway/driver-nano'
-import { createHostServer } from '@project-gateway/host'
-import { PROTOCOL_VERSION, type HostToClientMessage } from '@project-gateway/protocol'
-import { createInProcessClient } from '@project-gateway/sdk'
+} from '@terminal-use/driver-nano'
+import { createHostServer } from '@terminal-use/host'
+import { PROTOCOL_VERSION, type HostToClientMessage } from '@terminal-use/protocol'
+import { createInProcessClient } from '@terminal-use/sdk'
 import {
   DETERMINISTIC_DEMO_DRIVER_ID,
   createDeterministicDemoHostConfig
-} from '@project-gateway/testing'
+} from '@terminal-use/testing'
 
 export async function main(argv = process.argv.slice(2)): Promise<void> {
   const [command, ...rest] = argv
@@ -93,7 +93,7 @@ async function runRecordDemo(argv: string[]): Promise<void> {
   const outputDir = readStringFlag(argv, '--out')
   const host = createHostServer(createDeterministicDemoHostConfig())
   const client = await createInProcessClient(host, {
-    clientName: '@project-gateway/cli'
+    clientName: '@terminal-use/cli'
   })
 
   try {
@@ -185,7 +185,7 @@ async function runHostNano(argv: string[]): Promise<void> {
 async function runRecordNano(argv: string[]): Promise<void> {
   const outputDir = readStringFlag(argv, '--out')
   const requestedFile = readStringFlag(argv, '--file')
-  const tempRoot = await mkdtemp(join(tmpdir(), 'project-gateway-cli-nano-'))
+  const tempRoot = await mkdtemp(join(tmpdir(), 'terminal-use-cli-nano-'))
   const file = requestedFile ?? join(tempRoot, 'recorded-phase4-nano.txt')
   const host = createHostServer({
     tempRoot,
@@ -195,7 +195,7 @@ async function runRecordNano(argv: string[]): Promise<void> {
     }
   })
   const client = await createInProcessClient(host, {
-    clientName: '@project-gateway/cli'
+    clientName: '@terminal-use/cli'
   })
 
   try {
@@ -293,7 +293,7 @@ async function runRecordHtop(argv: string[]): Promise<void> {
   const outputDir = readStringFlag(argv, '--out')
   const pids = readNumberFlags(argv, '--pid')
   const readwrite = hasFlag(argv, '--readwrite')
-  const tempRoot = await mkdtemp(join(tmpdir(), 'project-gateway-cli-htop-'))
+  const tempRoot = await mkdtemp(join(tmpdir(), 'terminal-use-cli-htop-'))
   const host = createHostServer({
     tempRoot,
     drivers: [createHtopDriver()],
@@ -302,7 +302,7 @@ async function runRecordHtop(argv: string[]): Promise<void> {
     }
   })
   const client = await createInProcessClient(host, {
-    clientName: '@project-gateway/cli'
+    clientName: '@terminal-use/cli'
   })
 
   try {
@@ -456,12 +456,12 @@ function printUsage(): void {
   process.stdout.write(
     [
       'Usage:',
-      '  project-gateway host-demo [--port <port>]',
-      '  project-gateway record-demo [--out <directory>]',
-      '  project-gateway host-nano [--port <port>]',
-      '  project-gateway record-nano [--out <directory>] [--file <path>]',
-      '  project-gateway host-htop [--port <port>]',
-      '  project-gateway record-htop [--out <directory>] [--pid <pid>] [--readwrite]'
+      '  terminal-use host-demo [--port <port>]',
+      '  terminal-use record-demo [--out <directory>]',
+      '  terminal-use host-nano [--port <port>]',
+      '  terminal-use record-nano [--out <directory>] [--file <path>]',
+      '  terminal-use host-htop [--port <port>]',
+      '  terminal-use record-htop [--out <directory>] [--pid <pid>] [--readwrite]'
     ].join('\n') + '\n'
   )
 }

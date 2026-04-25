@@ -35,7 +35,7 @@ Implemented in this phase:
 
 - generic `profileArgs` support plus resolver-backed managed launch profiles
 - a GNU `nano` 9.0 managed launch profile with deterministic defaults
-- `@project-gateway/driver-nano` parser, actions, and thin typed facade
+- `@terminal-use/driver-nano` parser, actions, and thin typed facade
 - alpha mode coverage for editor, search, write-out, read-file, help, browser, and yes/no flows
 - nano parser fixtures and live integration tests
 - inspector and CLI support for live `nano` sessions

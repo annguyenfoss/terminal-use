@@ -5,7 +5,7 @@
     "rootDir": "./src",
     "outDir": "./dist",
     "paths": {
-      "@project-gateway/protocol": ["../protocol/src/index.ts"]
+      "@terminal-use/protocol": ["../protocol/src/index.ts"]
     },
     "tsBuildInfoFile": "tsconfig.tsbuildinfo"
   },

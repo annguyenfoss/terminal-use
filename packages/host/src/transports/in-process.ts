@@ -1,7 +1,7 @@
 import type {
   ClientToHostMessage,
   HostToClientMessage
-} from '@project-gateway/protocol'
+} from '@terminal-use/protocol'
 
 import type { ConnectionSink } from '../session-manager.js'
 

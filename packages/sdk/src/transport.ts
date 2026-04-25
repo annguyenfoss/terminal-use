@@ -1,9 +1,9 @@
-import type { HostServer } from '@project-gateway/host'
+import type { HostServer } from '@terminal-use/host'
 import type {
   ClientToHostMessage,
   HostToClientMessage
-} from '@project-gateway/protocol'
-import { hostToClientMessageSchema } from '@project-gateway/protocol'
+} from '@terminal-use/protocol'
+import { hostToClientMessageSchema } from '@terminal-use/protocol'
 
 import { ConnectionClosedError, ProtocolError } from './errors.js'
 import { SdkClient, type GatewayClient } from './session.js'
@@ -23,7 +23,7 @@ export interface TransportConnection {
   close(): Promise<void>
 }
 
-const DEFAULT_CLIENT_NAME = '@project-gateway/sdk'
+const DEFAULT_CLIENT_NAME = '@terminal-use/sdk'
 
 export async function createInProcessClient(
   host: HostServer,

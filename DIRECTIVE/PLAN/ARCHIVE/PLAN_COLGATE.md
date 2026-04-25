@@ -87,10 +87,10 @@ Parallelizable: nano and htop modules can proceed once core is stable (~month 4 
 
 ## 3. Repository Layout
 
-Final target location: `/home/stk/workspace/engineering/adjutant/project_gateway/` (currently empty except `.codex`).
+Final target location: `/home/stk/workspace/engineering/adjutant/terminal-use/` (currently empty except `.codex`).
 
 ```
-project_gateway/
+terminal-use/
 ├── .changeset/                      # changesets state
 ├── .github/
 │   └── workflows/
@@ -1489,10 +1489,10 @@ After plan approval and exit from plan mode, execution begins with:
 ```bash
 # 1. Copy this plan into the project directory.
 cp /home/stk/.claude/plans/agreed-let-s-make-a-curious-neumann.md \
-   /home/stk/workspace/engineering/adjutant/project_gateway/PLAN_COLGATE.md
+   /home/stk/workspace/engineering/adjutant/terminal-use/PLAN_COLGATE.md
 
 # 2. Initialize the repo.
-cd /home/stk/workspace/engineering/adjutant/project_gateway
+cd /home/stk/workspace/engineering/adjutant/terminal-use
 git init
 echo "22" > .nvmrc
 corepack enable pnpm
@@ -1529,14 +1529,14 @@ Actual execution is gated on plan approval.
 > (All new in v0.1 — this is a greenfield project.)
 
 **Repo root**
-- `/home/stk/workspace/engineering/adjutant/project_gateway/PLAN_COLGATE.md` (copy of this plan; committed)
-- `/home/stk/workspace/engineering/adjutant/project_gateway/package.json`
-- `/home/stk/workspace/engineering/adjutant/project_gateway/pnpm-workspace.yaml`
-- `/home/stk/workspace/engineering/adjutant/project_gateway/tsconfig.base.json`
-- `/home/stk/workspace/engineering/adjutant/project_gateway/eslint.config.js`
-- `/home/stk/workspace/engineering/adjutant/project_gateway/.github/workflows/ci.yml`
-- `/home/stk/workspace/engineering/adjutant/project_gateway/.github/workflows/conformance.yml`
-- `/home/stk/workspace/engineering/adjutant/project_gateway/.github/workflows/release.yml`
+- `/home/stk/workspace/engineering/adjutant/terminal-use/PLAN_COLGATE.md` (copy of this plan; committed)
+- `/home/stk/workspace/engineering/adjutant/terminal-use/package.json`
+- `/home/stk/workspace/engineering/adjutant/terminal-use/pnpm-workspace.yaml`
+- `/home/stk/workspace/engineering/adjutant/terminal-use/tsconfig.base.json`
+- `/home/stk/workspace/engineering/adjutant/terminal-use/eslint.config.js`
+- `/home/stk/workspace/engineering/adjutant/terminal-use/.github/workflows/ci.yml`
+- `/home/stk/workspace/engineering/adjutant/terminal-use/.github/workflows/conformance.yml`
+- `/home/stk/workspace/engineering/adjutant/terminal-use/.github/workflows/release.yml`
 
 **`@colgate/core`**
 - `packages/core/src/{index,terminal,session,pty,parser,snapshot,keys,waits,events,errors}.ts`

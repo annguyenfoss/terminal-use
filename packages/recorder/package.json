@@ -1,5 +1,5 @@
 {
-  "name": "@project-gateway/recorder",
+  "name": "@terminal-use/recorder",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -19,6 +19,6 @@
     "test": "vitest run --passWithNoTests"
   },
   "dependencies": {
-    "@project-gateway/protocol": "workspace:*"
+    "@terminal-use/protocol": "workspace:*"
   }
 }

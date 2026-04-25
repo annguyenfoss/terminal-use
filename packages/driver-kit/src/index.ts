@@ -2,7 +2,7 @@ import type {
   Element,
   ElementBox,
   ScreenSnapshot
-} from '@project-gateway/protocol'
+} from '@terminal-use/protocol'
 
 export interface ActionResult {
   ok: boolean
@@ -47,7 +47,7 @@ export interface TextRowMatch {
 
 export type TextQuery = string | RegExp
 
-export const DRIVER_KIT_PACKAGE_NAME = '@project-gateway/driver-kit'
+export const DRIVER_KIT_PACKAGE_NAME = '@terminal-use/driver-kit'
 
 export function getVisibleRows(snapshot: ScreenSnapshot): VisibleRow[] {
   return snapshot.plainTextLines.map((text, y) => ({ y, text }))

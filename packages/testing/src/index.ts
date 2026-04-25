@@ -7,10 +7,10 @@ import {
   type ActionResult,
   type Driver,
   type DriverIO
-} from '@project-gateway/driver-kit'
-import type { Element, ScreenSnapshot } from '@project-gateway/protocol'
+} from '@terminal-use/driver-kit'
+import type { Element, ScreenSnapshot } from '@terminal-use/protocol'
 
-export const TESTING_PACKAGE_NAME = '@project-gateway/testing'
+export const TESTING_PACKAGE_NAME = '@terminal-use/testing'
 export const DETERMINISTIC_DEMO_DRIVER_ID = 'deterministic-demo'
 
 export type DeterministicDemoMode = 'list' | 'details' | 'confirm'

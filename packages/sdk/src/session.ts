@@ -1,6 +1,6 @@
 import { randomUUID } from 'node:crypto'
 
-import type { ManagedShellLaunchOptions } from '@project-gateway/host'
+import type { ManagedShellLaunchOptions } from '@terminal-use/host'
 import type {
   ClientToHostMessage,
   HostToClientMessage,
@@ -8,8 +8,8 @@ import type {
   SemanticEvent,
   SessionExited,
   SessionStarted
-} from '@project-gateway/protocol'
-import { PROTOCOL_VERSION } from '@project-gateway/protocol'
+} from '@terminal-use/protocol'
+import { PROTOCOL_VERSION } from '@terminal-use/protocol'
 
 import { SdkDriverClient, unwrapDriverResult, type DriverClient, type DriverQueryName, type DriverStateSnapshot } from './driver-client.js'
 import {

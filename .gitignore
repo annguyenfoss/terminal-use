@@ -88,4 +88,4 @@ recordings/
 .recordings/
 
 # Repo-specific generated files
-/nano.*.save*
+nano.*.save*
